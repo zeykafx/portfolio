@@ -6,19 +6,18 @@ interface IAnimatedHeadingProps {
 	names: Array<string>;
 }
 
+// code heavily inspired by https://github.com/chetanverma16/youtube-react-framer-motion/blob/main/component/AnimatedTextWord.js
+
 export default function AnimatedHeading({
 	text,
 	names,
 }: IAnimatedHeadingProps) {
 	const [nameIndex, setNameIndex] = useState(0);
 
+	// setup the interval that will switch the name
 	useEffect(() => {
 		const timer = setInterval(() => {
-			if (nameIndex === 0) {
-				setNameIndex(1);
-			} else {
-				setNameIndex(0);
-			}
+			setNameIndex(nameIndex === 0 ? 1 : 0);
 		}, 5000);
 
 		return () => {
@@ -62,11 +61,12 @@ export default function AnimatedHeading({
 
 	return (
 		<motion.div
-			className="overflow-hidden flex mt-4 mb-4 py-3"
+			className="overflow-hidden flex mt-4 py-3"
 			variants={container}
 			initial="hidden"
 			animate="visible"
 		>
+			{/* all the main words */}
 			{words.map((word, index) => (
 				<motion.span
 					variants={child}
@@ -82,7 +82,7 @@ export default function AnimatedHeading({
 					if (nameIndex === index) {
 						return (
 							<>
-							{/* changing name */}
+							{/* the actual changing name */}
 								<motion.span
 									key={index}
 									className="text-4xl font-bold"

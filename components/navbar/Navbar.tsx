@@ -1,5 +1,6 @@
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 enum Themes {
 	light = "light",
@@ -8,6 +9,9 @@ enum Themes {
 
 export default function Navbar() {
 	const { theme, setTheme } = useTheme();
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => setMounted(true), []);
 
 	return (
 		<div className="navbar bg-lightTheme justify-between">
@@ -20,7 +24,13 @@ export default function Navbar() {
 					setTheme(theme === Themes.light ? Themes.dark : Themes.light);
 				}}
 			>
-				{theme == Themes.dark ? <BsSunFill /> : <BsFillMoonFill />}
+				{mounted ? (
+					theme == Themes.dark ? (
+						<BsSunFill />
+					) : (
+						<BsFillMoonFill />
+					)
+				) : null}
 			</button>
 		</div>
 	);
