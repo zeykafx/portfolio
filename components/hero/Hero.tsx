@@ -32,7 +32,7 @@ export default function Hero() {
 				Currently studying Computer Science at{" "}
 				<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
 				<br />
-				Mainly a Flutter dev, but I also use C, Go, and Rust.
+				Flutter dev, but also C, Go, and Rust.
 			</motion.div>
 
 			<motion.div className="text-lg pt-6">

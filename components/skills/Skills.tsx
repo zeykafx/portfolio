@@ -47,6 +47,9 @@ export default function Skills() {
 				<HeroLink href="https://go.dev" text="Golang" />, the speed it achieves
 				while being absurdly easy makes it my go-to choice for most projects.
 			</div>
+            <div>
+                TODO
+            </div>
             {/* <div className="grid grid-cols-3">
                 
             </div> */}

@@ -35,7 +35,7 @@ export default function Projects() {
 			className="md:px-10 px-5 mt-10"
 		>
 			<div className="text-3xl font-bold">Projects</div>
-			<div className="text-lg py-3">Like every developer I have plenty of projects, but here is my top 4 projects that I worked on.</div>
+			<div className="text-lg py-3">Like every developer I have plenty of projects, but here is my top 4 projects.</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 items-stretch place-items-center gap-5 py-7">
 				{projectsArr.map((project: IProject, index: number) => (
 					<Card project={project} index={index} key={index} />
@@ -67,7 +67,7 @@ let projectsArr: IProject[] = [
 		link: "/",
 		github: "https://github.com/zeykafx/pomodoro_twitch_bot",
 		description:
-			"Simple twitch bot that allows the chat to start pomodoro sessions that are displayed on Stream.",
+			"Simple twitch bot that allows the chat to start pomodoro sessions which are displayed on Stream.",
 		technologies: ["Go", "Typescript", "React"],
 	},
 	{
@@ -82,7 +82,7 @@ let projectsArr: IProject[] = [
 		name: "FS EFB",
 		link: "/",
 		github: "/",
-		description: "A VFR & IFR moving EFB designed for flight simulators, complete with flight planning, weather reports, online traffic and much more!",
+		description: "A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more!",
 		technologies: ["Flutter", "Go", "Java", "Python","Postgresql"],
 	},
 ];
