@@ -1,6 +1,7 @@
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 enum Themes {
 	light = "light",
@@ -15,9 +16,9 @@ export default function Navbar() {
 
 	return (
 		<div className="navbar bg-lightTheme justify-between">
-			<a href="/" className="btn btn-ghost normal-case text-2xl">
+			<Link href="/" className="btn btn-ghost normal-case text-2xl">
 				Corentin Detry
-			</a>
+			</Link>
 			<button
 				className="btn focus:ring-2 ring-primary-focus"
 				onClick={() => {
