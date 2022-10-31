@@ -20,7 +20,7 @@ export default function Navbar() {
 				Corentin Detry
 			</Link>
 			<button
-				className="btn focus:ring-2 ring-blue-700-focus"
+				className="btn btn-ghost focus:ring-2 ring-blue-700-focus"
 				aria-label="Dark Mode button"
 				onClick={() => {
 					setTheme(theme === Themes.light ? Themes.dark : Themes.light);
@@ -28,9 +28,9 @@ export default function Navbar() {
 			>
 				{mounted ? (
 					theme == Themes.dark ? (
-						<BsSunFill />
+						<BsSunFill size={20}/>
 					) : (
-						<BsFillMoonFill />
+						<BsFillMoonFill size={20}/>
 					)
 				) : null}
 			</button>

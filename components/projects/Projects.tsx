@@ -63,13 +63,6 @@ let projectsArr: IProject[] = [
 		technologies: ["Flutter"],
 	},
 	{
-		name: "FS EFB",
-		link: "/",
-		github: "/",
-		description: "A VFR moving map, designed for flight simulators only.",
-		technologies: ["Flutter", "Go", "Postgresql"],
-	},
-	{
 		name: "Pomodoro twitch bot",
 		link: "/",
 		github: "https://github.com/zeykafx/pomodoro_twitch_bot",
@@ -84,5 +77,12 @@ let projectsArr: IProject[] = [
 		description:
 			"Metar Viewer is an aviation weather app designed to be simple and do its job: Give you accurate and readable METAR, TAF, and Airport informations.",
 		technologies: ["Flutter"],
+	},
+	{
+		name: "FS EFB",
+		link: "/",
+		github: "/",
+		description: "A VFR & IFR moving EFB designed for flight simulators, complete with flight planning, weather reports, online traffic and much more!",
+		technologies: ["Flutter", "Go", "Java", "Python","Postgresql"],
 	},
 ];

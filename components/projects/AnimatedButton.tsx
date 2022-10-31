@@ -18,8 +18,8 @@ export default function AnimatedButton({
 					scale: 1,
 				},
 				hover: {
-					rotate: 10,
-					scale: 1.1,
+					rotate: 5,
+					scale: 1.07,
 				},
 			}}
             initial="initial"

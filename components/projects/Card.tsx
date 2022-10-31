@@ -17,7 +17,7 @@ export default function Card({ project, index }: ICardProps) {
 				<div className="flex flex-row justify-between items-center space-x-1">
 					<div className="flex flex-row gap-1">
 						{project.technologies.map((tech: string, indexTech: number) => (
-							<div className="font-slate" key={indexTech}>
+							<div key={indexTech}>
 								{tech}
 								{/* add a comma to the technologies */}
 								{indexTech < project.technologies.length - 1 ? "," : ""}

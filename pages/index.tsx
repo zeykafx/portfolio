@@ -3,6 +3,8 @@ import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
 import Projects from "../components/projects/Projects";
 import { motion } from "framer-motion";
+import Footer from "../components/footer/Footer";
+import Skills from "../components/skills/Skills";
 
 export default function Home() {
 	return (
@@ -36,6 +38,8 @@ export default function Home() {
 				>
 					<Hero />
 					<Projects />
+					<Skills/>
+					<Footer/>
 				</motion.div>
 			</main>
 		</div>
