@@ -26,7 +26,7 @@ export default function Projects() {
 	return (
 		<div className="flex flex-col items-center py-10">
 			{projectsArr.map((project: IProject, index: number) => (
-				<div className="card w-96 bg-base-100 shadow-xl">
+				<div className="card w-96 bg-base-100 shadow-xl" key={index}>
 					<div className="card-body">
 						<h2 className="card-title">{project.name}</h2>
 						<p>{project.description}</p>
