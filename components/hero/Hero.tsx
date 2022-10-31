@@ -26,7 +26,7 @@ export default function Hero() {
 			/>
 			{/* TODO: add icons for gh, discord,... here */}
 
-			<AnimatedHeading text="Hello, I'm" names={["Corentin", "Zeyka"]} />
+			<AnimatedHeading text="Hello, I'm Corentin!" />
 
 			{/* animate the opacity - just like a fade-in */}
 			<motion.div

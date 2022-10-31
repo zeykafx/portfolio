@@ -3,27 +3,27 @@ import { useEffect, useState } from "react";
 
 interface IAnimatedHeadingProps {
 	text: string;
-	names: Array<string>;
+	// names: Array<string>;
 }
 
 // code heavily inspired by https://github.com/chetanverma16/youtube-react-framer-motion/blob/main/component/AnimatedTextWord.js
 
 export default function AnimatedHeading({
 	text,
-	names,
+	// names,
 }: IAnimatedHeadingProps) {
-	const [nameIndex, setNameIndex] = useState(0);
+	// const [nameIndex, setNameIndex] = useState(0);
 
-	// setup the interval that will switch the name
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setNameIndex(nameIndex === 0 ? 1 : 0);
-		}, 5000);
+	// // setup the interval that will switch the name
+	// useEffect(() => {
+	// 	const timer = setInterval(() => {
+	// 		setNameIndex(nameIndex === 0 ? 1 : 0);
+	// 	}, 5000);
 
-		return () => {
-			clearInterval(timer);
-		};
-	}, [nameIndex]);
+	// 	return () => {
+	// 		clearInterval(timer);
+	// 	};
+	// }, [nameIndex]);
 
 	const words = text.split(" ");
 
@@ -77,12 +77,12 @@ export default function AnimatedHeading({
 				</motion.span>
 			))}
 
-			<AnimatePresence mode="wait">
+			{/* <AnimatePresence mode="wait">
 				{names.map((name, index) => {
 					if (nameIndex === index) {
 						return (
 							<>
-							{/* the actual changing name */}
+							
 								<motion.span
 									key={index}
 									className="text-4xl font-bold"
@@ -94,7 +94,7 @@ export default function AnimatedHeading({
 								>
 									{name}
 								</motion.span>
-								{/* animated ! following the name change */}
+								
 								<motion.span
 									layoutId="exclamationmark"
 									variants={child}
@@ -107,7 +107,7 @@ export default function AnimatedHeading({
 						);
 					}
 				})}
-			</AnimatePresence>
+			</AnimatePresence> */}
 		</motion.div>
 	);
 }
