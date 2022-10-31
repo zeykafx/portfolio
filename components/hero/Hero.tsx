@@ -3,7 +3,6 @@ import AnimatedHeading from "./AnimatedHeading";
 import HeroLink from "./HeroLink";
 
 export default function Hero() {
-
 	return (
 		<div className="mx-auto max-w-screen-md pt-10">
 			{/* profile picture */}
@@ -25,21 +24,45 @@ export default function Hero() {
 				animate="visible"
 				transition={{ delay: 0.1, type: "spring", bounce: 0.3 }}
 			/>
+			{/* TODO: add icons for gh, discord,... here */}
 
 			<AnimatedHeading text="Hello, I'm" names={["Corentin", "Zeyka"]} />
 
-			<div className="text-xl font-bold tracking-normal">
-				Currently studying Computer Science at{" "}
-				<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
-				<br />
-				Flutter dev, but also C, GO, and Rust.
-			</div>
+			{/* animate the opacity - just like a fade-in */}
+			<motion.div
+				variants={{
+					initial: {
+						opacity: 0,
+						display: "none",
+					},
+					visible:{
+						opacity: 1,
+						display: "block",
+					},
+				}}
+				initial="initial"
+				animate="visible"
+				transition={{
+					duration: 1,
+					staggerChildren: 0.5
+				}}
+			>
+				<motion.div className="text-xl font-bold tracking-normal">
+					Currently studying Computer Science at{" "}
+					<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
+					<br />
+					Flutter dev, but also C, GO, and Rust.
+				</motion.div>
 
-			<div className="text-lg pt-3">
-				With a few years of experience using Flutter, I focus on creating beautiful, performant, and reliable apps that help people in their day to day lives.
-				<br/>
-				My technology stack includes Dart, C, Go, and Rust. But I enjoy learning & experimenting with other languages.
-			</div>
+				<motion.div className="text-lg pt-3">
+					With a few years of experience using Flutter, I focus on creating
+					beautiful, performant, and reliable apps that help people in their day
+					to day lives.
+					<br />
+					My technology stack includes Dart, C, Go, and Rust. But I enjoy
+					learning & experimenting with other languages.
+				</motion.div>
+			</motion.div>
 		</div>
 	);
 }

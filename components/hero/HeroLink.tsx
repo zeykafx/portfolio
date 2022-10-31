@@ -22,16 +22,18 @@ export default function HeroLink({ href, text }: IHeroLinkProps) {
 						hidden: {
 							opacity: 0,
 							y: -5,
+                            width: 0
 						},
 						visible: {
 							opacity: 1,
-							y: 1,
+							y: 0,
+                            width: "100%"
 						},
 					}}
 					transition={{
-						// damping: 2,
-						// mass: 3,
-                        type: "spring", stiffness: 100
+                        type: "spring",
+                        stiffness: 60,
+                        duration: 0.5
 					}}
 				/>
 			</motion.a>
