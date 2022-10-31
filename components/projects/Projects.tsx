@@ -1,9 +1,6 @@
-import Link from "next/link";
-import { BsGithub } from "react-icons/bs";
-import { FiExternalLink } from "react-icons/fi";
-import AnimatedButton from "./AnimatedButton";
+import Card from "./Card";
 
-interface IProject {
+export interface IProject {
 	name: string;
 	link: string;
 	github: string;
@@ -20,26 +17,20 @@ let projectsArr: IProject[] = [
 			"Pomo focus is a pomodoro timer that lets you split your study sessions into smaller chunks with breaks in between. The built-in to-do list lets you assign a number of pomodoro sessions for each task, allowing you to judge your progress.",
 		technologies: ["Flutter"],
 	},
+	{
+		name: "FS EFB",
+		link: "/",
+		github: "https://github.com/zeykafx/flutter-VFR-map",
+		description: "A VFR moving map, designed for flight simulators only.",
+		technologies: ["Flutter", "Go", "Postgresql"]
+	}
 ];
 
 export default function Projects() {
 	return (
-		<div className="flex flex-col items-center py-10">
+		<div className="flex flex-col items-center py-10 space-y-4">
 			{projectsArr.map((project: IProject, index: number) => (
-				<div className="card w-96 bg-base-100 shadow-xl" key={index}>
-					<div className="card-body">
-						<h2 className="card-title">{project.name}</h2>
-						<p>{project.description}</p>
-						<div className="card-actions justify-end">
-							<AnimatedButton link={project.link}>
-								<FiExternalLink />
-							</AnimatedButton>
-							<AnimatedButton link={project.github}>
-								<BsGithub />
-							</AnimatedButton>
-						</div>
-					</div>
-				</div>
+				<Card project={project} index={index}/>
 			))}
 		</div>
 	);

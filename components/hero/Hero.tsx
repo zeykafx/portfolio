@@ -29,7 +29,7 @@ export default function Hero() {
 			<AnimatedHeading text="Hello, I'm" name="Corentin" />
 
 			{/* animate the opacity - just like a fade-in */}
-			<motion.div
+			{/* <motion.div
 				variants={{
 					initial: {
 						opacity: 0,
@@ -46,7 +46,7 @@ export default function Hero() {
 					duration: 1,
 					staggerChildren: 0.5
 				}}
-			>
+			> */}
 				<motion.div className="text-xl font-bold tracking-normal">
 					Currently studying Computer Science at{" "}
 					<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
@@ -62,7 +62,7 @@ export default function Hero() {
 					My technology stack includes Dart, C, Go, and Rust. But I enjoy
 					learning & experimenting with other languages.
 				</motion.div>
-			</motion.div>
+			{/* </motion.div> */}
 		</div>
 	);
 }

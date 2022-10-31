@@ -33,7 +33,7 @@ export default function HeroLink({ href, text }: IHeroLinkProps) {
 					transition={{
                         type: "spring",
                         stiffness: 60,
-                        duration: 0.5
+                        duration: 0.2
 					}}
 				/>
 			</motion.a>
