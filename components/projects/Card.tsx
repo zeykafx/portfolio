@@ -12,14 +12,13 @@ export default function Card({ project, index }: ICardProps) {
 	return (
 		<div
 			className="card w-96 bg-base-100 shadow-2xl border border-base-200"
-			key={index}
 		>
 			<div className="card-body">
 				<h2 className="card-title">{project.name}</h2>
 				<p>{project.description}</p>
 				<div className="flex flex-row space-x-1">
-					{project.technologies.map((tech: string, index: number) => (
-						<div className="font-slate" key={index}>
+					{project.technologies.map((tech: string, indexTech: number) => (
+						<div className="font-slate" key={indexTech}>
 							{tech}
 							{/* add a comma to the technologies */}
 							{index < project.technologies.length - 1 ? "," : ""}

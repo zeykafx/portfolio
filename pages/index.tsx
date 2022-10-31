@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
 import Projects from "../components/projects/Projects";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Home() {
 	return (

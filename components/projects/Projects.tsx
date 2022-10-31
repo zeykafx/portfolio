@@ -30,7 +30,7 @@ export default function Projects() {
 	return (
 		<div className="flex flex-col items-center py-10 space-y-4">
 			{projectsArr.map((project: IProject, index: number) => (
-				<Card project={project} index={index}/>
+				<Card project={project} index={index} key={index}/>
 			))}
 		</div>
 	);
