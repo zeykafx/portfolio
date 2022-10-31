@@ -21,6 +21,7 @@ export default function Navbar() {
 			</Link>
 			<button
 				className="btn focus:ring-2 ring-primary-focus"
+				aria-label="Dark Mode button"
 				onClick={() => {
 					setTheme(theme === Themes.light ? Themes.dark : Themes.light);
 				}}
