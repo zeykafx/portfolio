@@ -4,7 +4,7 @@ import HeroLink from "./HeroLink";
 
 export default function Hero() {
 	return (
-		<div className="mx-auto max-w-screen-md pt-10">
+		<div className="mx-auto max-w-screen-md pt-10 px-10">
 			{/* profile picture */}
 			<motion.img
 				src="me.jpg"
@@ -26,7 +26,7 @@ export default function Hero() {
 			/>
 			{/* TODO: add icons for gh, discord,... here */}
 
-			<AnimatedHeading text="Hello, I'm Corentin!" />
+			<AnimatedHeading text="Hello, I'm" name="Corentin" />
 
 			{/* animate the opacity - just like a fade-in */}
 			<motion.div

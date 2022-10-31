@@ -11,13 +11,13 @@ export default function HeroLink({ href, text }: IHeroLinkProps) {
 			<motion.a
 				href={href}
 				target="_blank"
-				className="relative text-blue-700"
+				className="relative dark:text-blue-700 text-sky-800"
 				whileHover="visible"
 				initial="hidden"
 			>
 				{text}
 				<motion.span
-					className="absolute bottom-0 left-0 w-full bg-blue-700 h-0.5"
+					className="absolute bottom-0 left-0 w-full dark:bg-blue-700 bg-sky-800 h-0.5"
 					variants={{
 						hidden: {
 							opacity: 0,

@@ -3,15 +3,13 @@ import { useEffect, useState } from "react";
 
 interface IAnimatedHeadingProps {
 	text: string;
+	name: string;
 	// names: Array<string>;
 }
 
 // code heavily inspired by https://github.com/chetanverma16/youtube-react-framer-motion/blob/main/component/AnimatedTextWord.js
 
-export default function AnimatedHeading({
-	text,
-	// names,
-}: IAnimatedHeadingProps) {
+export default function AnimatedHeading({ text, name }: IAnimatedHeadingProps) {
 	// const [nameIndex, setNameIndex] = useState(0);
 
 	// // setup the interval that will switch the name
@@ -70,12 +68,20 @@ export default function AnimatedHeading({
 			{words.map((word, index) => (
 				<motion.span
 					variants={child}
-					className="mr-1.5 text-4xl font-bold"
+					className={"mr-1.5 text-4xl font-bold"}
 					key={index}
 				>
 					{word}
 				</motion.span>
 			))}
+
+			<motion.span variants={child} className={"text-4xl font-bold dark:text-blue-700 text-sky-800"}>
+				{name}
+			</motion.span>
+
+			<motion.span variants={child} className="text-4xl font-bold">
+				!
+			</motion.span>
 
 			{/* <AnimatePresence mode="wait">
 				{names.map((name, index) => {
