@@ -37,7 +37,7 @@ export default function Skills() {
 			<div className="text-3xl font-bold">Skills</div>
 			<div className="text-lg pt-3">
 				I started Coding back in 2019, and since then I have used many
-				technologies and programming languages, whether it's for University or
+				technologies and programming languages, whether it is for University or
 				for a side project, I always like to learn the ins and outs of the tools
 				I use.
 			</div>
