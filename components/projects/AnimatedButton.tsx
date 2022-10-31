@@ -29,7 +29,7 @@ export default function AnimatedButton({
             }}
 			href={link}
 			target={"_blank"}
-			className="btn focus:ring-2 ring-blue-700-focus"
+			className="btn btn-ghost focus:ring-2 ring-blue-700-focus"
 		>
 			{children}
 		</motion.a>

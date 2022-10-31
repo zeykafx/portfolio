@@ -10,18 +10,6 @@ interface IAnimatedHeadingProps {
 // code heavily inspired by https://github.com/chetanverma16/youtube-react-framer-motion/blob/main/component/AnimatedTextWord.js
 
 export default function AnimatedHeading({ text, name }: IAnimatedHeadingProps) {
-	// const [nameIndex, setNameIndex] = useState(0);
-
-	// // setup the interval that will switch the name
-	// useEffect(() => {
-	// 	const timer = setInterval(() => {
-	// 		setNameIndex(nameIndex === 0 ? 1 : 0);
-	// 	}, 5000);
-
-	// 	return () => {
-	// 		clearInterval(timer);
-	// 	};
-	// }, [nameIndex]);
 
 	const words = text.split(" ");
 
@@ -83,37 +71,6 @@ export default function AnimatedHeading({ text, name }: IAnimatedHeadingProps) {
 				!
 			</motion.span>
 
-			{/* <AnimatePresence mode="wait">
-				{names.map((name, index) => {
-					if (nameIndex === index) {
-						return (
-							<>
-							
-								<motion.span
-									key={index}
-									className="text-4xl font-bold"
-									variants={child}
-									initial={{ y: 20, opacity: 0 }}
-									animate={{ y: 0, opacity: 1 }}
-									exit={{ y: -20, opacity: 0 }}
-									transition={{ duration: 0.5 }}
-								>
-									{name}
-								</motion.span>
-								
-								<motion.span
-									layoutId="exclamationmark"
-									variants={child}
-									transition={{ duration: 0.4, opacity: 0.5 }}
-									className="text-4xl font-bold"
-								>
-									!
-								</motion.span>
-							</>
-						);
-					}
-				})}
-			</AnimatePresence> */}
 		</motion.div>
 	);
 }

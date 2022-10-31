@@ -4,7 +4,7 @@ import HeroLink from "./HeroLink";
 
 export default function Hero() {
 	return (
-		<div className="mx-auto max-w-screen-md pt-10 px-10">
+		<div className="pt-10 md:px-10 px-5">
 			{/* profile picture */}
 			<motion.img
 				src="me.jpg"
@@ -28,41 +28,22 @@ export default function Hero() {
 
 			<AnimatedHeading text="Hello, I'm" name="Corentin" />
 
-			{/* animate the opacity - just like a fade-in */}
-			{/* <motion.div
-				variants={{
-					initial: {
-						opacity: 0,
-						display: "none",
-					},
-					visible:{
-						opacity: 1,
-						display: "block",
-					},
-				}}
-				initial="initial"
-				animate="visible"
-				transition={{
-					duration: 1,
-					staggerChildren: 0.5
-				}}
-			> */}
-				<motion.div className="text-xl font-bold tracking-normal">
-					Currently studying Computer Science at{" "}
-					<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
-					<br />
-					Mainly a Flutter dev, but I also use C, Go, and Rust.
-				</motion.div>
+			<motion.div className="text-xl font-bold tracking-normal">
+				Currently studying Computer Science at{" "}
+				<HeroLink href="https://uclouvain.be/" text="UCLouvain" />.
+				<br />
+				Mainly a Flutter dev, but I also use C, Go, and Rust.
+			</motion.div>
 
-				<motion.div className="text-lg pt-3">
-					With a few years of experience using Flutter, I focus on creating
-					beautiful, performant, and reliable apps that help people in their day
-					to day lives.
-					<br />
-					My technology stack includes Dart, C, Go, and Rust. But I enjoy
-					learning & experimenting with other languages.
-				</motion.div>
-			{/* </motion.div> */}
+			<motion.div className="text-lg pt-6">
+				With a few years of experience using Flutter, I focus on creating
+				beautiful, performant, and reliable apps that help people in their day
+				to day lives.
+			</motion.div>
+			<motion.div className="text-lg pt-4">
+				My technology stack includes Dart, C, Go, and Rust. But I enjoy learning
+				& experimenting with other languages.
+			</motion.div>
 		</div>
 	);
 }

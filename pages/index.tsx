@@ -13,9 +13,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
+			<main className="mr-1">
 				<Navbar />
+
 				<motion.div
+					className="mx-auto max-w-screen-lg"
 					variants={{
 						initial: {
 							opacity: 0,
@@ -30,7 +32,6 @@ export default function Home() {
 					animate="visible"
 					transition={{
 						duration: 1,
-						staggerChildren: 0.5,
 					}}
 				>
 					<Hero />

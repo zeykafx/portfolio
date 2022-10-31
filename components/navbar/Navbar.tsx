@@ -15,7 +15,7 @@ export default function Navbar() {
 	useEffect(() => setMounted(true), []);
 
 	return (
-		<div className="navbar bg-base-100 justify-between">
+		<div className="navbar justify-between">
 			<Link href="/" className="btn btn-ghost normal-case text-2xl">
 				Corentin Detry
 			</Link>
