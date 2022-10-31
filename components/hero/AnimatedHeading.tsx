@@ -77,7 +77,7 @@ export default function AnimatedHeading({
 				</motion.span>
 			))}
 
-			<AnimatePresence exitBeforeEnter>
+			<AnimatePresence mode="wait">
 				{names.map((name, index) => {
 					if (nameIndex === index) {
 						return (
