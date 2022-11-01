@@ -1,47 +1,19 @@
 import Card from "./Card";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import AnimatedSection from "../animated_section/AnimatedSection";
 
 export default function Projects() {
-	const controls = useAnimation();
-	const [ref, inView] = useInView();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start("visible");
-		}
-	}, [controls, inView]);
-
 	return (
-		<motion.div
-			ref={ref}
-			animate={controls}
-			initial="hidden"
-			variants={{
-				hidden: {
-					y: 30,
-					opacity: 0,
-				},
-				visible: {
-					y: 0,
-					opacity: 1,
-				},
-			}}
-			transition={{
-				delay: 0.5,
-				duration: 0.4,
-			}}
-			className="md:px-10 px-5 mt-10"
-		>
+		<AnimatedSection delay={0.5} duration={0.4} className="md:px-10 px-5 mt-10">
 			<div className="text-3xl font-bold">Projects</div>
-			<div className="text-lg py-3">Like every developer I have plenty of projects, but here is my top 4.</div>
+			<div className="text-lg py-3">
+				Like every developer I have plenty of projects, but here is my top 4.
+			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 items-stretch place-items-center gap-5 py-7">
 				{projectsArr.map((project: IProject, index: number) => (
 					<Card project={project} index={index} key={index} />
 				))}
 			</div>
-		</motion.div>
+		</AnimatedSection>
 	);
 }
 
@@ -82,7 +54,8 @@ let projectsArr: IProject[] = [
 		name: "FS EFB",
 		link: "/",
 		github: "/",
-		description: "A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more!",
-		technologies: ["Flutter", "Go", "Java", "Python","Postgresql"],
+		description:
+			"A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more!",
+		technologies: ["Flutter", "Go", "Java", "Python", "Postgresql"],
 	},
 ];

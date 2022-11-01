@@ -12,7 +12,14 @@ export default function Navbar() {
 	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 
-	useEffect(() => setMounted(true), []);
+	
+
+	useEffect(() => {
+		setMounted(true);
+		// very hacky way of getting the data-theme attribute from the html element...
+		// need to do this because sometimes the dark mode button doesn't have the right icon since the theme variable is not set, probs due to SSG or SSR
+		document.getElementsByClassName("scroll-smooth")[0].attributes.getNamedItem("data-theme")?.value === "dark" ? setTheme(Themes.dark) : setTheme(Themes.light);
+	}, [setTheme]);
 
 	return (
 		<div className="navbar justify-between">

@@ -1,39 +1,9 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import AnimatedSection from "../animated_section/AnimatedSection";
 import HeroLink from "../hero/HeroLink";
 
 export default function Skills() {
-	const controls = useAnimation();
-	const [ref, inView] = useInView();
-
-	useEffect(() => {
-		if (inView) {
-			controls.start("visible");
-		}
-	}, [controls, inView]);
-
 	return (
-		<motion.div
-			ref={ref}
-			animate={controls}
-			initial="hidden"
-			variants={{
-				hidden: {
-					y: 30,
-					opacity: 0,
-				},
-				visible: {
-					y: 0,
-					opacity: 1,
-				},
-			}}
-			transition={{
-				delay: 0.1,
-				duration: 0.4,
-			}}
-			className="md:px-10 px-5 mt-5"
-		>
+		<AnimatedSection delay={0.2} duration={0.4} className="md:px-10 px-5 mt-5">
 			<div className="text-3xl font-bold">Skills</div>
 			<div className="text-lg pt-3">
 				I started Coding back in 2019, and since then I have used many
@@ -47,12 +17,10 @@ export default function Skills() {
 				<HeroLink href="https://go.dev" text="Golang" />, the speed it achieves
 				while being absurdly easy makes it my go-to choice for most projects.
 			</div>
-            <div>
-                TODO
-            </div>
-            {/* <div className="grid grid-cols-3">
+			<div>TODO</div>
+			{/* <div className="grid grid-cols-3">
                 
             </div> */}
-		</motion.div>
+		</AnimatedSection>
 	);
 }
