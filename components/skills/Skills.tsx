@@ -46,7 +46,7 @@ export default function Skills() {
 				Whenever speed is critical, <HeroLink href="https://en.wikipedia.org/wiki/C_(programming_language)" text="C" /> or <HeroLink href="https://www.rust-lang.org/" text="Rust" /> are my prefered languages.
 			</div>
 			<div className="text-lg pt-3">
-				Here is some of my favorite languages, in which I`&apos;`m comfortable.
+				Here is some of my favorite languages, in which I&apos;m comfortable.
 			</div>
 			<div
 				className="grid grid-cols-3 pt-8 gap-4"
