@@ -41,7 +41,7 @@ export default function Card({ project, index }: ICardProps) {
 							<></>
 						)}
 
-						{project.github === "/" && project.link === "/" ? <div>No links</div> : <></>}
+						{/* {project.github === "/" && project.link === "/" ? <div>No links</div> : <></>} */}
 					</div>
 				</div>
 			</div>

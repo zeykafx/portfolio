@@ -40,7 +40,7 @@ export default function Hero() {
 				beautiful, performant, and reliable apps that help people in their day
 				to day lives.
 			</motion.div>
-			<motion.div className="text-lg pt-4">
+			<motion.div className="text-lg pt-3">
 				My technology stack includes Dart, C, Go, and Rust. But I enjoy learning
 				& experimenting with other languages.
 			</motion.div>

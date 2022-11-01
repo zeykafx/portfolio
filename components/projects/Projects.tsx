@@ -3,12 +3,12 @@ import AnimatedSection from "../animated_section/AnimatedSection";
 
 export default function Projects() {
 	return (
-		<AnimatedSection delay={0.5} duration={0.4} className="md:px-10 px-5 mt-10">
+		<AnimatedSection delay={0.5} duration={0.4} className="md:px-10 px-5 mt-16">
 			<div className="text-3xl font-bold">Projects</div>
 			<div className="text-lg py-3">
 				Like every developer I have plenty of projects, but here is my top 4.
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 items-stretch place-items-center gap-5 py-7">
+			<div className="grid grid-cols-1 md:grid-cols-2 items-stretch place-items-center gap-5 py-5">
 				{projectsArr.map((project: IProject, index: number) => (
 					<Card project={project} index={index} key={index} />
 				))}
