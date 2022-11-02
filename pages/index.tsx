@@ -11,7 +11,7 @@ export default function Home() {
 		<div>
 			<Head>
 				<title>Corentin Detry</title>
-				<meta name="description" content="Corentin Detry's portfolio" />
+				<meta name="description" content="Corentin Detry's personal site" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
