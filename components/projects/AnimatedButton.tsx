@@ -40,7 +40,7 @@ export default function AnimatedButton({
                     isPage ? (
                         <motion.div
                             animate={{rotate: [0, 10, -10, 0]}}
-                            transition={{duration: 0.5, repeatDelay: 1, repeat: Infinity}}
+                            transition={{duration: 0.5, repeatDelay: 2.5, repeat: Infinity}}
                         >
                             <Link href={link}>{children}</Link>
                         </motion.div>

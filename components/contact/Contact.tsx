@@ -7,7 +7,7 @@ export default function Contact() {
     const [visible, setVisible] = useState(false);
 
     return (
-        <AnimatedSection delay={0.2} duration={0.4} className="md:px-10 px-5 mt-14">
+        <AnimatedSection delay={1} duration={0.4} className="md:px-10 px-5 mt-14">
             <div className="text-3xl font-bold">Get in touch</div>
             <div className="text-lg pt-3">
                 If you want to get in contact with me, the best way is either via email or via <span
