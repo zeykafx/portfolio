@@ -37,7 +37,7 @@ export default function Download() {
                             Web
                         </div>
                         <div className={"text-lg"}>
-                            The web version is available at <HeroLink href={"pomo.corentindetry.be"} text={'pomo.corentindetry.be'}/>
+                            The web version is available at <HeroLink href={"https://pomo.corentindetry.be"} text={'pomo.corentindetry.be'}/>
                         </div>
                     </div>
                 </div>
