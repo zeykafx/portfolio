@@ -12,8 +12,6 @@ export default function Navbar() {
 	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 
-	
-
 	useEffect(() => {
 		setMounted(true);
 		// very hacky way of getting the data-theme attribute from the html element...
