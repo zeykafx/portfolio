@@ -5,6 +5,7 @@ import Projects from "../components/projects/Projects";
 import { motion } from "framer-motion";
 import Footer from "../components/footer/Footer";
 import Skills from "../components/skills/Skills";
+import Contact from "../components/contact/Contact";
 
 export default function Home() {
 	return (
@@ -39,6 +40,7 @@ export default function Home() {
 					<Hero />
 					<Projects />
 					<Skills/>
+					<Contact/>
 					<Footer/>
 				</motion.div>
 			</main>

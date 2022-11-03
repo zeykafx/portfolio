@@ -13,6 +13,7 @@ interface social {
     icon: ReactNode
 }
 
+export const discordInviteLink = "https://discord.gg/VeFn7DgRwa";
 const socials: social[] = [
     {
         social_name: "Github",
@@ -29,7 +30,7 @@ const socials: social[] = [
     {
         social_name: "Discord",
         handle: "Zeyka#8688",
-        link: "https://discord.gg/VeFn7DgRwa",
+        link: discordInviteLink,
         icon: <FaDiscord size={20}/>
     },
 ]
