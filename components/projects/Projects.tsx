@@ -26,6 +26,7 @@ export default function Projects() {
 export interface IProject {
     name: string;
     link: string;
+    isPage: boolean;
     github: string;
     description: string;
     technologies: string[];
@@ -34,7 +35,8 @@ export interface IProject {
 let projectsArr: IProject[] = [
     {
         name: "Pomo Focus",
-        link: "https://corentindetry.be/pomofocus",
+        link: "/pomofocus",
+        isPage: true,
         github: "https://github.com/zeykafx/flutter_pomodoro_timer_app",
         description:
             "Pomo focus is a pomodoro timer app that lets you split your study sessions into small chunks with breaks in between.",
@@ -43,6 +45,7 @@ let projectsArr: IProject[] = [
     {
         name: "Pomodoro twitch bot",
         link: "/",
+        isPage: false,
         github: "https://github.com/zeykafx/pomodoro_twitch_bot",
         description:
             "Simple twitch bot that allows the chat to start pomodoro sessions which are displayed on Stream.",
@@ -51,6 +54,7 @@ let projectsArr: IProject[] = [
     {
         name: "Metar Viewer - Metar Decoder",
         link: "https://play.google.com/store/apps/details?id=com.zeykafx.metarviewer",
+        isPage: false,
         github: "/",
         description:
             "Metar Viewer is an aviation weather app designed to be simple and do its job: Give you accurate and readable METAR, TAF, and Airport information.",
@@ -59,6 +63,7 @@ let projectsArr: IProject[] = [
     {
         name: "FS EFB",
         link: "/",
+        isPage: false,
         github: "/",
         description:
             "A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more! The project is not fully done yet but it is getting there.",

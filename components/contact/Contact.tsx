@@ -22,7 +22,7 @@ export default function Contact() {
                         corentin.detry@gmail.com
                     </a>
                 ) : (
-                    <button className={"btn"} onClick={() => setVisible(true)}>
+                    <button className={"btn btn-ghost"} onClick={() => setVisible(true)}>
                         Reveal
                     </button>
                 )}

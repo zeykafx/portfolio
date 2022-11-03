@@ -34,10 +34,10 @@ module.exports = {
 			{
 				"light": {
 					primary: "#fb923c",
-					secondary: "#fdba74",
+					secondary: "#075985",
 					accent: "#fed7aa",
 					neutral: "#1f2937",
-					"base-100": "#e5e7eb",
+					"base-100": "#ffffff",
 					info: "#8CCAC1",
 					success: "#9CB686",
 					warning: "#FFD261",
@@ -48,7 +48,7 @@ module.exports = {
 			{
 				"dark": {
 					primary: "#fb923c",
-					secondary: "#fdba74",
+					secondary: "#075985",
 					accent: "#fed7aa",
 					neutral: "#374151",
 					"base-100": "#111827",

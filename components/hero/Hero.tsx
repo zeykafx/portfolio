@@ -71,7 +71,7 @@ export default function Hero() {
                 {
                     socials.map((socialElem: social, index: number) => (
                         <div key={index} className="tooltip" data-tip={socialElem.handle}>
-                            <AnimatedButton link={socialElem.link}>{socialElem.icon}</AnimatedButton>
+                            <AnimatedButton link={socialElem.link} isPage={false}>{socialElem.icon}</AnimatedButton>
                         </div>
                     ))
                 }

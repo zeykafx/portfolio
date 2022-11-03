@@ -7,3 +7,10 @@
   height: 100vh;
   width: 100vw;
 } */
+
+.slick-prev:before {
+    color: black !important;
+}
+.slick-next:before {
+    color: black !important;
+}

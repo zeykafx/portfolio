@@ -27,14 +27,14 @@ export default function Card({ project, index }: ICardProps) {
 
 					<div className="flex flex-row">
 						{project.link !== "/" ? (
-							<AnimatedButton link={project.link}>
+							<AnimatedButton link={project.link} isPage={project.isPage}>
 								<FiExternalLink size={20}/>
 							</AnimatedButton>
 						) : (
 							<></>
 						)}
 						{project.github !== "/" ? (
-							<AnimatedButton link={project.github}>
+							<AnimatedButton link={project.github} isPage={false}>
 								<BsGithub size={20}/>
 							</AnimatedButton>
 						) : (
