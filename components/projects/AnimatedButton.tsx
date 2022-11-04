@@ -1,5 +1,5 @@
-import {ReactNode} from "react";
-import {motion} from "framer-motion";
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface IAnimatedButtonProps {
@@ -9,10 +9,10 @@ interface IAnimatedButtonProps {
 }
 
 export default function AnimatedButton({
-                                           link,
-                                           children,
-                                           isPage,
-                                       }: IAnimatedButtonProps) {
+    link,
+    children,
+    isPage,
+}: IAnimatedButtonProps) {
     return (
         <div
             className={isPage ? "tooltip" : ""}
@@ -34,20 +34,21 @@ export default function AnimatedButton({
                 transition={{
                     duration: 0.1
                 }}
-                className="btn btn-ghost focus:ring-2 ring-blue-700-focus"
             >
                 {
                     isPage ? (
                         <motion.div
-                            animate={{rotate: [0, 10, -10, 0]}}
-                            transition={{duration: 0.5, repeatDelay: 2.5, repeat: Infinity}}
+                            animate={{ rotate: [0, 10, -10, 0] }}
+                            transition={{ duration: 0.5, repeatDelay: 2.5, repeat: Infinity }}
                         >
-                            <Link href={link}>{children}</Link>
+                            <Link className="btn btn-ghost focus:ring-2 ring-blue-700-focus" href={link}>{children}</Link>
                         </motion.div>
                     ) : (
-                        <a href={link}
-                           rel="noreferrer"
-                           target={"_blank"}>
+                        <a
+                            className="btn btn-ghost focus:ring-2 ring-blue-700-focus"
+                            href={link}
+                            rel="noreferrer"
+                            target={"_blank"}>
                             {children}
                         </a>
                     )

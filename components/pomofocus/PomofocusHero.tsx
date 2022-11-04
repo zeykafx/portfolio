@@ -22,7 +22,7 @@ export default function PomofocusHero() {
                         </div>
                     </div>
                     <div className={"text-xl"}>
-                        Pomo Focus lets you follow the pomodoro study method for studying while following your todo list. Available on Android, Web and Windows, pomo focus accompanies you during your study sessions.
+                        Pomo Focus lets you follow the pomodoro study method while following your todo list. Available for Android, Web and Windows, pomo focus accompanies you during your study sessions.
                     </div>
 
                     <div className={"flex sm:flex-row flex-col gap-3"}>
