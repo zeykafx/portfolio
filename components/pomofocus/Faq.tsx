@@ -83,11 +83,11 @@ export default function Faq() {
             </div>
 
             {/* add a phone border and width only on larger screen, on mobile, the app's width is the device's width and the screen is the screen size */}
-            <div className="md:mockup-phone mt-10 md:w-auto md:h-auto h-screen w-full">
+            <div className="md:mockup-phone mt-10 md:w-auto md:h-auto h-screen w-full px-10">
                     <div className="bg-black h-6 relative top-0 left-0 w-full z-10"></div>
                     <div className="display h-full">
                         <div className="artboard artboard-demo md:phone-5 md:h-auto sm:block sm:w-auto h-screen">
-                            <iframe src="https://pomo.corentindetry.be/#/" className="h-full w-full"></iframe>
+                            <iframe src="https://pomo.corentindetry.be/#/" className="h-full w-full overflow-hidden" scrolling="no"></iframe>
 
                         </div>
                     </div>

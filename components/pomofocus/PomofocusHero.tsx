@@ -13,7 +13,7 @@ export default function PomofocusHero() {
                         <div className={"font-bold text-3xl -my-[40px]"}>
                             <div className={"relative w-[10.65rem] h-2 dark:bg-sky-900 bg-sky-700 bottom-1 left-0 -z-1"}>
                             </div>
-                            <div className={"translate-y-[-40px]"}>
+                            <div className={"translate-y-[-38px]"}>
                                 Pomo Focus
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export default function PomofocusHero() {
                 <motion.img
                     src="icon.png"
                     alt="Pomo Focus logo"
-                    className="w-40 h-40"
+                    className="w-36 h-36 hidden sm:block"
                     variants={{
                         hidden: {
                             scale: 0,

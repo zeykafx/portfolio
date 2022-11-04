@@ -8,9 +8,12 @@
   width: 100vw;
 } */
 
-.slick-prev:before {
+
+/* Only change the color of the next and prev arrows if th theme is light */
+html[data-theme="light"] .slick-prev:before {
     color: black !important;
 }
-.slick-next:before {
+
+html[data-theme="light"] .slick-next:before {
     color: black !important;
 }
