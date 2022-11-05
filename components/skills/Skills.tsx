@@ -5,7 +5,6 @@ import { FaRust } from "react-icons/fa";
 import AnimatedSection from "../animated_section/AnimatedSection";
 import HeroLink from "../hero/HeroLink";
 import LanguageCard from "./LanguageCard";
-import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 

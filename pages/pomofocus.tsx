@@ -2,7 +2,6 @@ import Head from "next/head";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { motion } from "framer-motion";
-import AnimatedSection from "../components/animated_section/AnimatedSection";
 import PomofocusHero from "../components/pomofocus/PomofocusHero";
 import Faq from "../components/pomofocus/Faq";
 import Download from "../components/pomofocus/Download";

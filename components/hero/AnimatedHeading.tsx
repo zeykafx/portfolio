@@ -1,10 +1,8 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 interface IAnimatedHeadingProps {
 	text: string;
 	name: string;
-	// names: Array<string>;
 }
 
 // code heavily inspired by https://github.com/chetanverma16/youtube-react-framer-motion/blob/main/component/AnimatedTextWord.js
