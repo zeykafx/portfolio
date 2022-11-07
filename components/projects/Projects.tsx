@@ -11,12 +11,12 @@ export default function Projects() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 items-stretch place-items-center gap-5 py-5">
                 {projectsArr.map((project: IProject, index: number) => (
-                    <Card project={project} index={index} key={index}/>
+                    <Card project={project} index={index} key={index} />
                 ))}
             </div>
             <div className={"text-lg py-3"}>
                 I have worked on and collaborated on lots more projects, you can see the full list of public projects on
-                my <HeroLink text={"github"} href={"https://github.com/zeykafx"}/>, of course there are plenty of
+                my <HeroLink text={"github"} href={"https://github.com/zeykafx"} />, of course there are plenty of
                 private repositories for various types of projects.
             </div>
         </AnimatedSection>
@@ -66,7 +66,7 @@ let projectsArr: IProject[] = [
         isPage: false,
         github: "/",
         description:
-            "A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more! The project is not fully done yet but it is getting there.",
-        technologies: ["Flutter", "Go", "Java", "Python", "Postgresql"],
+            "A VFR & IFR EFB designed for flight simulators, complete with flight planning, weather reports, online traffic, and much more! The project is not fully done yet but it's getting there.",
+        technologies: ["Flutter", "Go", "Java", "Python", "PostgreSQL"],
     },
 ];

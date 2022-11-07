@@ -1,5 +1,5 @@
 import AnimatedSection from "../animated_section/AnimatedSection";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function PomofocusHero() {
     return (
@@ -11,7 +11,7 @@ export default function PomofocusHero() {
                     {/* Title */}
                     <div className={"flex flex-col gap-1"}>
                         <div className={"font-bold text-3xl -my-[40px]"}>
-                            <div className={"relative w-[10.65rem] h-2 dark:bg-sky-900 bg-sky-700 bottom-1 left-0 -z-1"}>
+                            <div className={"relative w-[10.65rem] h-2 bg-blue-700 dark:bg-sky-900 bottom-1 left-0 -z-1"}>
                             </div>
                             <div className={"translate-y-[-38px]"}>
                                 Pomo Focus
@@ -51,7 +51,7 @@ export default function PomofocusHero() {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{delay: 0.1, type: "spring", bounce: 0.3}}
+                    transition={{ delay: 0.1, type: "spring", bounce: 0.3 }}
                 />
             </div>
         </AnimatedSection>

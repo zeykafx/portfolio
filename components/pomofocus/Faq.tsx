@@ -1,5 +1,5 @@
 import AnimatedSection from "../animated_section/AnimatedSection";
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import HeroLink from "../hero/HeroLink";
 import dynamic from "next/dynamic";
 
@@ -31,9 +31,9 @@ export default function Faq() {
             </div>
 
             <div>
-            <Suspense fallback={`Loading...`}>
-                <ImgSlider />
-            </Suspense>
+                <Suspense fallback={`Loading...`}>
+                    <ImgSlider />
+                </Suspense>
             </div>
 
             <div className="font-bold text-2xl mt-14">
