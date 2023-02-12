@@ -11,7 +11,7 @@ export default function PomofocusHero() {
                     {/* Title */}
                     <div className={"flex flex-col gap-1"}>
                         <div className={"font-bold text-3xl -my-[40px]"}>
-                            <div className={"relative w-[10.65rem] h-2 bg-blue-700 dark:bg-sky-900 bottom-1 left-0 -z-1"}>
+                            <div className={"relative w-[11.1rem] h-2 bg-[#075985]/60 dark:bg-sky-900 bottom-1 left-0 -z-1"}>
                             </div>
                             <div className={"translate-y-[-38px]"}>
                                 Pomo Focus

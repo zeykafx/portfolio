@@ -55,16 +55,16 @@ export default function Hero() {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{delay: 0.1, type: "spring", bounce: 0.3}}
+                    transition={{delay: 0.5, type: "spring", bounce: 0.3}}
                 />
 
             <AnimatedHeading text="Hello, I'm" name="Corentin"/>
 
             <motion.div className="text-xl font-bold tracking-normal">
-                Currently studying Computer Science at{" "}
+            I&apos;m Currently studying Computer Science at{" "}
                 <HeroLink href="https://uclouvain.be/" text="UCLouvain"/>.
                 <br/>
-                Flutter dev, but also C, Go, and Rust.
+                I mainly use Flutter, C, Go, and Rust in my projects.
             </motion.div>
 
             <div className={"flex flex-row gap-2 pt-4"}>

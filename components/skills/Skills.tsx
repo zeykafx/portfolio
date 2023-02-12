@@ -29,7 +29,7 @@ export default function Skills() {
 	}, [controls, inView]);
 
 	return (
-		<AnimatedSection delay={0.2} duration={0.4} className="md:px-10 px-5 mt-14">
+		<AnimatedSection delay={1.2} duration={0.4} className="md:px-10 px-5 mt-14">
 			<div className="text-3xl font-bold">Skills</div>
 			<div className="text-lg pt-3">
 				I started coding back in 2019, and since then I have used many

@@ -23,6 +23,7 @@ export default function AnimatedSection({
 			controls.start("visible");
 		}
 	}, [controls, inView]);
+
 	return (
 		<motion.div
 			ref={ref}
@@ -41,6 +42,8 @@ export default function AnimatedSection({
 			transition={{
 				delay: delay,
 				duration: duration,
+				ease: "easeOut"
+				
 			}}
 			className={className}
 		>

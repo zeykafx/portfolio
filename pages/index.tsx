@@ -34,7 +34,7 @@ export default function Home() {
 					initial="initial"
 					animate="visible"
 					transition={{
-						duration: 1,
+						duration: 0.5,
 					}}
 				>
 					<Hero />

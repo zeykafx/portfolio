@@ -4,7 +4,7 @@ import HeroLink from "../hero/HeroLink";
 
 export default function Projects() {
     return (
-        <AnimatedSection delay={0.5} duration={0.4} className="md:px-10 px-5 mt-14">
+        <AnimatedSection delay={0.7} duration={0.5} className="md:px-10 px-5 mt-14">
             <div className="text-3xl font-bold">Projects</div>
             <div className="text-lg py-3">
                 Like every developer I have plenty of projects, but here is my top 4.
